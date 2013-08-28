@@ -1,0 +1,9 @@
+inherit kde4
+
+NAME="ark"
+VERSION=4.10.5
+RELEASE=1
+CATEGORY="Archive"
+SUMMARY="KDE archive manager"
+DESCRIPTION="Part of the KDE utilities suite"
+REQUIRES="p7zip unzip zip"

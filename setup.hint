@@ -1,4 +1,0 @@
-category: KDE Archive
-requires: libarchive2 libgcc1 libkdecore5 libkonq5 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 p7zip unzip zip
-sdesc: "KDE archive manager"
-ldesc: "KDE utilities suite"
