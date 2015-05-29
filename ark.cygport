@@ -6,4 +6,4 @@ RELEASE=1
 CATEGORY="Archive"
 SUMMARY="KDE archive manager"
 DESCRIPTION="Part of the KDE utilities suite"
-REQUIRES="p7zip unzip zip"
+REQUIRES="kde-runtime p7zip unzip zip"
