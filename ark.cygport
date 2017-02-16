@@ -1,9 +1,12 @@
-inherit kde4
+inherit kf5
 
 NAME="ark"
-VERSION=15.04.3
+VERSION=16.08.3
 RELEASE=1
 CATEGORY="Archive"
 SUMMARY="KDE archive manager"
 DESCRIPTION="Part of the KDE utilities suite"
-REQUIRES="kde-runtime p7zip unzip zip"
+
+PATCH_URI="16.08-dllexport.patch"
+
+REQUIRES="lrzip lz4 p7zip unzip zip"

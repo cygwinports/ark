@@ -1,0 +1,44 @@
+--- origsrc/ark-16.08.3/plugins/clizipplugin/cliplugin.h	2016-11-06 17:17:24.000000000 -0600
++++ src/ark-16.08.3/plugins/clizipplugin/cliplugin.h	2016-11-10 15:23:12.901337200 -0600
+@@ -23,7 +23,7 @@
+ 
+ #include "kerfuffle/cliinterface.h"
+ 
+-class KERFUFFLE_EXPORT CliPlugin : public Kerfuffle::CliInterface
++class CliPlugin : public Kerfuffle::CliInterface
+ {
+     Q_OBJECT
+ 
+--- origsrc/ark-16.08.3/plugins/libsinglefileplugin/bz2plugin.h	2016-11-06 17:17:24.000000000 -0600
++++ src/ark-16.08.3/plugins/libsinglefileplugin/bz2plugin.h	2016-11-10 15:20:58.119699800 -0600
+@@ -28,7 +28,7 @@
+ 
+ #include "singlefileplugin.h"
+ 
+-class KERFUFFLE_EXPORT LibBzip2Interface : public LibSingleFileInterface
++class LibBzip2Interface : public LibSingleFileInterface
+ {
+     Q_OBJECT
+ 
+--- origsrc/ark-16.08.3/plugins/libsinglefileplugin/gzplugin.h	2016-11-06 17:17:24.000000000 -0600
++++ src/ark-16.08.3/plugins/libsinglefileplugin/gzplugin.h	2016-11-10 15:21:05.284575200 -0600
+@@ -28,7 +28,7 @@
+ 
+ #include "singlefileplugin.h"
+ 
+-class KERFUFFLE_EXPORT LibGzipInterface : public LibSingleFileInterface
++class LibGzipInterface : public LibSingleFileInterface
+ {
+     Q_OBJECT
+ 
+--- origsrc/ark-16.08.3/plugins/libsinglefileplugin/xzplugin.h	2016-11-06 17:17:24.000000000 -0600
++++ src/ark-16.08.3/plugins/libsinglefileplugin/xzplugin.h	2016-11-10 15:21:16.511258800 -0600
+@@ -28,7 +28,7 @@
+ 
+ #include "singlefileplugin.h"
+ 
+-class KERFUFFLE_EXPORT LibXzInterface : public LibSingleFileInterface
++class LibXzInterface : public LibSingleFileInterface
+ {
+     Q_OBJECT
+ 
