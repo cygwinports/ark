@@ -1,3 +1,14 @@
+--- origsrc/ark-17.04.3/kerfuffle/archiveentry.h	2017-07-09 17:45:29.000000000 -0500
++++ src/ark-17.04.3/kerfuffle/archiveentry.h	2017-07-13 23:36:59.876398500 -0500
+@@ -39,7 +39,7 @@ enum PathFormat {
+     WithTrailingSlash
+ };
+ 
+-class Archive::Entry : public QObject
++class KERFUFFLE_EXPORT Archive::Entry : public QObject
+ {
+     Q_OBJECT
+ 
 --- origsrc/ark-16.08.3/plugins/clizipplugin/cliplugin.h	2016-11-06 17:17:24.000000000 -0600
 +++ src/ark-16.08.3/plugins/clizipplugin/cliplugin.h	2016-11-10 15:23:12.901337200 -0600
 @@ -23,7 +23,7 @@
