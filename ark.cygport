@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="ark"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="Archive"
 SUMMARY="KDE archive manager"
@@ -9,4 +9,36 @@ DESCRIPTION="Part of the KDE utilities suite"
 
 PATCH_URI="16.08-dllexport.patch"
 
-REQUIRES="lrzip lz4 p7zip unzip zip"
+PKG_NAMES="ark ark5-part"
+ark_CONTENTS="
+	etc/postinstall/ark.sh
+	etc/xdg/ark.categories
+	usr/bin/ark.exe
+	usr/share/applications/org.kde.ark.desktop
+	usr/share/config.kcfg/ark.kcfg
+	usr/share/doc/HTML/*/ark/
+	usr/share/doc/ark/
+	usr/share/icons/hicolor/*/apps/ark.*
+	usr/share/kxmlgui5/ark/arkui.rc
+	usr/share/locale/*/LC_MESSAGES/ark.mo
+	usr/share/man/man1/ark.1.gz
+	usr/share/man/*/man1/ark.1*
+	usr/share/metainfo/org.kde.ark.appdata.xml
+	usr/share/mime/packages/kerfuffle.xml
+"
+ark5_part_REQUIRES="lrzip lz4 p7zip unzip zip"
+ark5_part_CONTENTS="
+	usr/bin/cygkerfuffle-17.dll
+	usr/lib/qt5/plugins/arkpart.dll
+	usr/lib/qt5/plugins/kerfuffle/
+	usr/lib/qt5/plugins/kf5/kfileitemaction/compressfileitemaction.dll
+	usr/lib/qt5/plugins/kf5/kfileitemaction/extractfileitemaction.dll
+	usr/lib/qt5/plugins/kf5/kio_dnd/extracthere.dll
+	usr/share/kservices5/ark_part.desktop
+	usr/share/kservicetypes5/kerfufflePlugin.desktop
+	usr/share/kxmlgui5/ark/ark_part.rc
+	usr/share/kxmlgui5/ark/ark_viewer.rc
+"
+PKG_IGNORE="
+	usr/lib/libkerfuffle.dll.a
+"
